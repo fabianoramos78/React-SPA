@@ -1,3 +1,4 @@
+/*Geral*/
 * {
   margin: 0;
   padding: 0;
@@ -12,25 +13,50 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
+.nav {
+  background: #000;
+}
+.nav a {
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}
+.nav a:hover {
+  background: gray;
+}
 
+/*Small SmartPhones*/
 @media screen and (max-width: 480px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+  }
 }
-
+/*Medium SmartPhones*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+  }
+  .nav a {
+    width: 100%;
+  }
 }
-
+/*Large SmartPhones and Small Notebooks*/
 @media screen and (min-width: 769px) and (max-width: 1199px) {
-}
-
-@media screen and (min-width: 1200px) {
   .nav {
     display: flex;
-    background: #000;
   }
   .nav a {
     width: 25%;
-    text-align: center;
-    padding: 10px 0;
-    color: #fff;
+  }
+}
+/*X-Large SmartPhones*/
+@media screen and (min-width: 1200px) {
+  .nav {
+    display: flex;
+  }
+  .nav a {
+    width: 25%;
   }
 }
