@@ -14,7 +14,7 @@ a {
   font-weight: bold;
 }
 .nav {
-  background: #000;
+  background: #171551;
 }
 .nav a {
   text-align: center;
@@ -22,24 +22,77 @@ a {
   color: #fff;
 }
 .nav a:hover {
-  background: gray;
+  background: #27247d;
 }
 
 /*Small SmartPhones*/
 @media screen and (max-width: 480px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
   .nav {
     display: none;
     flex-direction: column;
+    order: 2;
+  }
+  .buttonMob {
+    order: 1;
+    text-align: right;
+    padding: 5px 5% 5px 0;
+  }
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 5%;
+  }
+  .address {
+    order: 3;
+    padding: 10px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .address img {
+    vertical-align: middle;
+  }
+  .address strong {
+    color: #171551;
+    font-size: 24px;
   }
 }
 /*Medium SmartPhones*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
   .nav {
     display: none;
     flex-direction: column;
+    order: 2;
   }
-  .nav a {
-    width: 100%;
+  .buttonMob {
+    order: 1;
+    text-align: right;
+    padding: 5px 5% 5px 0;
+  }
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 5%;
+  }
+  .address {
+    order: 3;
+    padding: 10px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .address img {
+    vertical-align: middle;
+  }
+  .address strong {
+    color: #171551;
+    font-size: 24px;
   }
 }
 /*Large SmartPhones and Small Notebooks*/
@@ -50,6 +103,28 @@ a {
   .nav a {
     width: 25%;
   }
+  .buttonMob {
+    display: none;
+  }
+  .logo {
+    float: left;
+    width: 30%;
+    padding: 15px 0 15px 10%;
+  }
+  .address {
+    float: left;
+    width: 70%;
+    padding: 20px 5% 10px 20%;
+    line-height: 35px;
+    text-align: center;
+  }
+  .address img {
+    vertical-align: middle;
+  }
+  .address strong {
+    color: #171551;
+    font-size: 24px;
+  }
 }
 /*X-Large SmartPhones*/
 @media screen and (min-width: 1200px) {
@@ -58,5 +133,27 @@ a {
   }
   .nav a {
     width: 25%;
+  }
+  .buttonMob {
+    display: none;
+  }
+  .logo {
+    float: left;
+    width: 30%;
+    padding: 15px 0 15px 10%;
+  }
+  .address {
+    float: left;
+    width: 70%;
+    padding: 20px 5% 10px 20%;
+    line-height: 35px;
+    text-align: center;
+  }
+  .address img {
+    vertical-align: middle;
+  }
+  .address strong {
+    color: #171551;
+    font-size: 24px;
   }
 }
